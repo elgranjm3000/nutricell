@@ -1,0 +1,49 @@
+nutricion_volumenes:
+    resource: "@NutricionBundle/Resources/config/routing/volumenes.yml"
+    prefix:   /volumen
+
+nutricion_homepage:
+    path:     /
+    defaults: { _controller: NutricionBundle:Default:index }
+registrar_miembros:
+    path:     /registrardatos
+    defaults: { _controller: NutricionBundle:Default:registro }
+buscar_cedula:
+    path:     /buscardatos
+    defaults: { _controller: NutricionBundle:Default:buscarred }
+buscar_cedulamaster:
+    path:     /buscarmaster
+    defaults: { _controller: NutricionBundle:Default:buscarmaster }
+buscar_username:
+    path:     /buscarusername
+    defaults: { _controller: NutricionBundle:Default:buscarusername }
+reportenutricell:
+    path:     /planilla/{id}
+    defaults: { _controller: NutricionBundle:Default:reporte }
+admin:
+    path:     /admin
+    defaults: { _controller: NutricionBundle:Default:admin }
+table:
+    path:     /data
+    defaults: { _controller: NutricionBundle:Default:table }
+vp:
+    path:     /vp/{id}
+    defaults: { _controller: NutricionBundle:Volumenes:new }
+arbol:
+    path:     /arbol/{id}
+    defaults: { _controller: NutricionBundle:Default:arbol }
+miperfil:
+    path:     /nutricell/{id}
+    defaults: { _controller: NutricionBundle:Default:perfil }
+cerrar:
+    path:     /logout
+    defaults: { _controller: NutricionBundle:Default:logout }
+galeria_admin_mini:
+    path:     /mini/{id}
+    defaults: { _controller: NutricionBundle:Default:mini }
+diferencial:
+    path:     /diferencial/{id}
+    defaults: { _controller: NutricionBundle:Default:diferencial }
+residual:
+    path:     /residual/{id}
+    defaults: { _controller: NutricionBundle:Default:residual }
